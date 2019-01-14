@@ -26,6 +26,8 @@ namespace DataBindingTests
             nameTextBox3.DataBindings.Add("Text", bindingSource, "Name");
             ageTextBox2.DataBindings.Add("Text", bindingSource, "Age");
             ageTextBox3.DataBindings.Add("Text", bindingSource, "Age");
+
+            personBindingSource.DataSource = new Person { Age = 22 };
         }
     }
 }
